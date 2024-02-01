@@ -11,7 +11,8 @@ public class HlavniProgram {
 
   public void start() {
     zofka = new Turtle();
-    nakresliPrasatko();
+    //nakresliPrasatko();
+    nakresliSlunicko();
   }
     void nakresliPrasatko() {
       // kreslim telo
@@ -106,8 +107,25 @@ public class HlavniProgram {
       }
     }
 
-    //TODO implementace domácího úkolu
+    void nakresliSlunicko() {
 
+    zofka.penUp();
+    zofka.move(230);
+    zofka.turnLeft(90);
+    zofka.move(380);
+    zofka.penDown();
+
+      for (int i = 0; i < 18; i++) {
+      zofka.move(14);
+      zofka.turnLeft(20);
+      zofka.turnRight(90);
+      zofka.move(20);
+      zofka.turnRight(180);
+      zofka.move(20);
+      zofka.turnRight(90);
+    }
+
+    }
   }
 
 
