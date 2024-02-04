@@ -36,6 +36,14 @@ public class HlavniProgram {
     zofka.move(650);
 
     nakresliSlunicko();
+
+    zofka.penUp();
+    zofka.turnLeft(90);
+    zofka.move(650);
+    zofka.turnLeft(90);
+    zofka.move(200);
+
+    nakresliJmeno();
   }
 
 
@@ -281,7 +289,7 @@ public class HlavniProgram {
       }
     }
 
-  void nakresliPrasatko() {
+   void nakresliPrasatko() {
     zofka.penDown();
     // kreslim telo
     for (int i = 0; i < 5; i++) {
@@ -375,6 +383,117 @@ public class HlavniProgram {
     }
 
   }
+
+   void nakresliJmeno() {
+
+
+     // pismeno A
+    zofka.turnLeft(68);
+    zofka.penDown();
+     for (int i = 0; i < 10; i++) {
+       zofka.move(10);
+     }
+     zofka.turnRight(135);
+     for (int i = 0; i < 10; i++) {
+       zofka.move(10);
+     }
+     zofka.turnLeft(180);
+     zofka.move(47);
+     zofka.turnLeft(70);
+     zofka.move(42);
+     zofka.penUp();
+
+     // premisteni
+
+     zofka.turnLeft(90);
+     zofka.move(50);
+     zofka.turnLeft(90);
+     zofka.move(100);
+
+     // pismeno L
+
+     zofka.turnLeft(86);
+     zofka.penDown();
+     zofka.move(91);
+     zofka.turnLeft(180);
+     zofka.penUp();
+     zofka.move(91);
+     zofka.penDown();
+     zofka.turnLeft(90);
+     zofka.move(50);
+     zofka.penUp();
+
+     // pismenko E
+
+     zofka.move(50);
+     zofka.turnLeft(90);
+     zofka.penDown();
+     zofka.move(91);
+     zofka.turnRight(90);
+     zofka.move(30);
+     zofka.turnRight(180);
+     zofka.penUp();
+     zofka.move(30);
+     zofka.turnLeft(90);
+     zofka.move(45);
+     zofka.penDown();
+     zofka.turnLeft(90);
+     zofka.move(30);
+     zofka.turnRight(180);
+     zofka.penUp();
+     zofka.move(30);
+     zofka.turnLeft(90);
+     zofka.move(45);
+     zofka.turnLeft(90);
+     zofka.penDown();
+     zofka.move(30);
+     zofka.penUp();
+
+     // pismenko N
+
+     zofka.move(50);
+     zofka.turnLeft(90);
+     zofka.penDown();
+     zofka.move(91);
+     zofka.turnRight(145);
+     zofka.move(115);
+     zofka.turnLeft(145);
+     zofka.move(91);
+     zofka.penUp();
+
+     //pismenko A
+
+     zofka.turnLeft(180);
+     zofka.move(91);
+     zofka.turnLeft(90);
+     zofka.move(50);
+
+       zofka.turnLeft(68);
+       zofka.penDown();
+       for (int i = 0; i < 10; i++) {
+           zofka.move(10);
+       }
+       zofka.turnRight(135);
+       for (int i = 0; i < 10; i++) {
+           zofka.move(10);
+       }
+       zofka.turnLeft(180);
+       zofka.move(47);
+       zofka.turnLeft(70);
+       zofka.move(42);
+       zofka.penUp();
+
+
+
+
+
+
+
+
+
+
+
+   }
   }
 
 
